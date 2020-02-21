@@ -81,11 +81,14 @@
     <Compile Include="Core\Main\INTERNAL_DefaultValueStore.cs" />
     <Compile Include="Core\Other\INTERNAL_DispatcherQueueHandler.cs" />
     <Compile Include="System.ComponentModel\IPagedCollectionView.cs" />
+    <Compile Include="System.ComponentModel\ListSortDirection.cs" />
     <Compile Include="System.ComponentModel\PageChangingEventArgs.cs" />
     <Compile Include="System.ComponentModel\ReadOnlyAttribute.cs" />
     <Compile Include="System.ComponentModel\WORKINPROGRESS\GroupDescription.cs" />
+    <Compile Include="System.ComponentModel\WORKINPROGRESS\ICollectionView.cs" />
     <Compile Include="System.ComponentModel\WORKINPROGRESS\IEditableCollectionView.cs" />
     <Compile Include="System.ComponentModel\WORKINPROGRESS\NewItemPlaceholderPosition.cs" />
+    <Compile Include="System.IO.IsolatedStorage\WORKINPROGRESS\IsolatedStorageSettings.cs" />
     <Compile Include="System.Net\WORKINPROGRESS\HttpWebRequest.cs" />
     <Compile Include="System.Net\WORKINPROGRESS\WebRequest.cs" />
     <Compile Include="System.Resources\ResourceManager.cs" />
@@ -102,8 +105,11 @@
     <Compile Include="System.Windows.Interactivity\WORKINPROGRESS\TriggerAction.cs" />
     <Compile Include="System.Windows.Interactivity\WORKINPROGRESS\TriggerAction`1.cs" />
     <Compile Include="System.Windows.Markup\WORKINPROGRESS\XmlLanguage.cs" />
+    <Compile Include="Windows.UI.Xaml.Controls\WORKINPROGRESS\DescriptionViewer.cs" />
     <Compile Include="Windows.UI.Xaml.Controls\WORKINPROGRESS\Frame.cs" />
+    <Compile Include="Windows.UI.Xaml.Controls\WORKINPROGRESS\LayoutTransformer.cs" />
     <Compile Include="Windows.UI.Xaml.Data\WORKINPROGRESS\BindingExpressionBase.cs" />
+    <Compile Include="Windows.UI.Xaml.Data\WORKINPROGRESS\CollectionViewSource.cs" />
     <Compile Include="Windows.UI.Xaml.Input\WORKINPROGRESS\TextCompositionEventHandler.cs" />
     <Compile Include="Windows.UI.Xaml.Navigation\WORKINPROGRESS\LoadCompletedEventHandler.cs" />
     <Compile Include="System.Xml.Linq\XObject.cs" />

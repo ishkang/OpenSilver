@@ -585,6 +585,8 @@ namespace Windows.UI.Xaml
         }
 
         public bool HasElevatedPermissions { get; set; }
+
+        public Collections.IList ApplicationLifetimeObjects { get; }
 #endif
     }
 }
