@@ -36,7 +36,7 @@ namespace Windows.Foundation
 #endif
     public partial struct Size
     {
-        private static Size emptySize;
+        private static readonly Size emptySize;
 
         double _width;
         double _height;

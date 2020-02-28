@@ -142,9 +142,9 @@ namespace Windows.UI.Core
             //    (Action)(() =>
             //    {
             INTERNAL_Simulator.WebControl.Dispatcher.BeginInvoke((Action)(() =>
-                {
-                    method();
-                }));
+            {
+                method();
+            }));
             //}));
 #if CSHTML5NETSTANDARD
             }
