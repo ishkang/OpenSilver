@@ -82,7 +82,8 @@ namespace Windows.UI.Xaml.Controls
             "DisplayMode",
             typeof(DataPager_DisplayMode),
             typeof(DataPager),
-            new PropertyMetadata(DataPager_DisplayMode.Numeric, OnDisplayModeChanged));
+            new PropertyMetadata(DataPager_DisplayMode.Numeric, OnDisplayModeChanged)
+            { CallPropertyChangedWhenLoadedIntoVisualTree = WhenToCallPropertyChangedEnum.IfPropertyIsSet });
 
         private static void OnDisplayModeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -113,7 +114,8 @@ namespace Windows.UI.Xaml.Controls
             "NumericButtonCount",
             typeof(int),
             typeof(DataPager),
-            new PropertyMetadata(0, OnNumericButtonCountChanged));
+            new PropertyMetadata(0, OnNumericButtonCountChanged)
+            { CallPropertyChangedWhenLoadedIntoVisualTree = WhenToCallPropertyChangedEnum.IfPropertyIsSet });
 
         private static void OnNumericButtonCountChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -144,7 +146,8 @@ namespace Windows.UI.Xaml.Controls
             "Source",
             typeof(PagedCollectionView),
             typeof(DataPager),
-            new PropertyMetadata(OnSourceChanged));
+            new PropertyMetadata(OnSourceChanged)
+            { CallPropertyChangedWhenLoadedIntoVisualTree = WhenToCallPropertyChangedEnum.IfPropertyIsSet });
 
         private static void OnSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -196,7 +199,8 @@ namespace Windows.UI.Xaml.Controls
             "PageSize",
             typeof(int),
             typeof(DataPager),
-            new PropertyMetadata(-1, OnPageSizeChanged));
+            new PropertyMetadata(-1, OnPageSizeChanged)
+            { CallPropertyChangedWhenLoadedIntoVisualTree = WhenToCallPropertyChangedEnum.IfPropertyIsSet });
 
         /// <summary>
         /// the data PageSize
@@ -236,7 +240,8 @@ namespace Windows.UI.Xaml.Controls
             "CurrentPage",
             typeof(int),
             typeof(DataPager),
-            new PropertyMetadata(0, OnCurrentPageChanged));
+            new PropertyMetadata(0, OnCurrentPageChanged)
+            { CallPropertyChangedWhenLoadedIntoVisualTree = WhenToCallPropertyChangedEnum.IfPropertyIsSet });
 
         private static void OnCurrentPageChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -272,7 +277,8 @@ namespace Windows.UI.Xaml.Controls
         /// Identifies the Style dependency property.
         /// </summary>
         public static readonly DependencyProperty NumericButtonStyleProperty =
-            DependencyProperty.Register("NumericButtonStyle", typeof(Style), typeof(DataPager), new PropertyMetadata(null));
+            DependencyProperty.Register("NumericButtonStyle", typeof(Style), typeof(DataPager), new PropertyMetadata(null)
+            { CallPropertyChangedWhenLoadedIntoVisualTree = WhenToCallPropertyChangedEnum.IfPropertyIsSet });
 
 #endregion
 
